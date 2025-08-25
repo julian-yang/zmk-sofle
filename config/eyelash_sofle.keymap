@@ -54,11 +54,11 @@
 
         layer0 {
             bindings = <
-&kp CAPSLOCK  &kp N1     &kp N2  &kp N3     &kp N4         &kp N5    &kp UP_ARROW     &kp N6           &kp N7     &kp N8     &kp N9            &kp N0             &kp BACKSPACE
-&kp TAB       &kp Q      &kp W   &kp E      &kp R          &kp T     &kp DOWN_ARROW   &kp Y            &kp U      &kp I      &kp O             &kp P              &kp DELETE
-&kp ESCAPE    &kp A      &kp S   &kp D      &kp F          &kp G     &kp LEFT_ARROW   &kp H            &kp J      &kp K      &kp L             &kp SEMI           &mt RIGHT_ALT APOS
-&sk LSHFT     &kp Z      &kp X   &kp C      &kp V          &kp B     &kp RIGHT_ARROW  &kp N            &kp M      &kp COMMA  &kp DOT           &kp FSLH           &sl 2
-&kp C_MUTE    &kp GRAVE  &trans  &sk LCTRL  &kp BACKSPACE  &sl 1     &kp C_MUTE       &mt RSHFT ENTER  &kp SPACE  &sl 2      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp CAPSLOCK  &kp N1     &kp N2        &kp N3     &kp N4         &kp N5    &kp UP_ARROW     &kp N6           &kp N7     &kp N8     &kp N9            &kp N0             &kp MINUS
+&kp TAB       &kp Q      &kp W         &kp E      &kp R          &kp T     &kp DOWN_ARROW   &kp Y            &kp U      &kp I      &kp O             &kp P              &kp BACKSLASH
+&kp ESCAPE    &kp A      &kp S         &kp D      &kp F          &kp G     &kp LEFT_ARROW   &kp H            &kp J      &kp K      &kp L             &kp SEMI           &mt RIGHT_ALT APOS
+&sk LSHFT     &kp Z      &kp X         &kp C      &kp V          &kp B     &kp RIGHT_ARROW  &kp N            &kp M      &kp COMMA  &kp DOT           &kp FSLH           &sl 1
+&kp C_MUTE    &kp GRAVE  &sk LEFT_ALT  &sk LCTRL  &kp BACKSPACE  &sl 2     &kp C_MUTE       &mt RSHFT ENTER  &kp SPACE  &sl 3      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -66,6 +66,16 @@
         };
 
         layer_1 {
+            bindings = <
+&trans  &trans            &trans             &trans                &trans                 &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans             &trans                &trans                 &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &trans  &kp MINUS        &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans             &trans                &trans                 &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans             &trans                &trans                 &trans       &trans  &kp RIGHT_SHIFT  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        old_layer_1 {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
@@ -78,7 +88,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_2 {
+        old_layer_2 {
             bindings = <
 &kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
@@ -88,16 +98,6 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
