@@ -47,6 +47,20 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        mac_layer {
+            bindings = <&to 5>;
+            key-positions = <11 12>;
+        };
+    };
+
+    macros {
+        os_copy: os_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "OS_COPY";
+        };
     };
 
     keymap {
@@ -57,8 +71,8 @@
 &kp CAPSLOCK  &kp N1     &kp N2        &kp N3     &kp N4         &kp N5    &kp C_BRIGHTNESS_INC  &kp N6           &kp N7     &kp N8     &kp N9            &kp N0             &kp MINUS
 &kp TAB       &kp Q      &kp W         &kp E      &kp R          &kp T     &kp C_BRIGHTNESS_DEC  &kp Y            &kp U      &kp I      &kp O             &kp P              &kp BACKSLASH
 &kp ESCAPE    &kp A      &kp S         &kp D      &kp F          &kp G     &kp C_VOLUME_DOWN     &kp H            &kp J      &kp K      &kp L             &kp SEMI           &mt RIGHT_ALT APOS
-&sk LSHFT     &kp Z      &kp X         &kp C      &kp V          &kp B     &kp C_VOLUME_UP       &kp N            &kp M      &kp COMMA  &kp DOT           &kp FSLH           &sl 3
-&kp C_MUTE    &kp GRAVE  &sk LEFT_ALT  &sk LCTRL  &kp BACKSPACE  &sl 1     &kp C_MUTE            &mt RSHFT ENTER  &kp SPACE  &to 2      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&sk LSHFT     &kp Z      &kp X         &kp C      &kp V          &kp B     &kp C_VOLUME_UP       &kp N            &kp M      &kp COMMA  &kp DOT           &kp FSLH           &sl 4
+&kp C_MUTE    &kp GRAVE  &sk LEFT_ALT  &sk LCTRL  &kp BACKSPACE  &sl 1     &kp C_MUTE            &mt RSHFT ENTER  &kp SPACE  &to 3      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -70,8 +84,18 @@
 &trans  &kp F1            &kp F2             &kp F3                &kp F4                 &kp F5       &trans  &kp F6           &kp F7          &kp F8        &kp F9        &kp F10           &kp F11
 &trans  &trans            &trans             &trans                &trans                 &trans       &trans  &trans           &trans          &trans        &trans        &trans            &kp F12
 &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &trans  &kp MINUS        &sk LEFT_SHIFT  &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_CONTROL  &trans
-&trans  &trans            &trans             &trans                &trans                 &trans       &trans  &trans           &trans          &trans        &trans        &trans            &trans
+&trans  &kp LC(Z)         &kp LC(X)          &kp LC(C)             &kp LC(V)              &trans       &trans  &trans           &trans          &trans        &trans        &trans            &trans
 &trans  &trans            &trans             &trans                &trans                 &trans       &trans  &kp RIGHT_SHIFT  &trans          &trans        &trans        &trans
+            >;
+        };
+
+        mac_raise {
+            bindings = <
+&trans  &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -95,6 +119,25 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        mac_mode {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        enable_mac_raise {
+            if-layers = <5 1>;
+            then-layer = <2>;
         };
     };
 };
