@@ -49,7 +49,7 @@
         };
 
         mac_layer {
-            bindings = <&to 5>;
+            bindings = <&tog 5>;
             key-positions = <11 12>;
         };
     };
