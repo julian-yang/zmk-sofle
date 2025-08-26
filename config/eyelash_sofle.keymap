@@ -47,6 +47,25 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        mac_layer {
+            bindings = <&tog 5>;
+            key-positions = <11 12>;
+        };
+
+        bt_rgb_sticky_layer {
+            bindings = <&sl 4>;
+            key-positions = <50 51>;
+        };
+    };
+
+    macros {
+        os_copy: os_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "OS_COPY";
+        };
     };
 
     keymap {
@@ -54,11 +73,11 @@
 
         layer0 {
             bindings = <
-&kp CAPSLOCK  &kp N1     &kp N2        &kp N3     &kp N4         &kp N5    &kp C_BRIGHTNESS_INC  &kp N6           &kp N7     &kp N8     &kp N9            &kp N0             &kp MINUS
-&kp TAB       &kp Q      &kp W         &kp E      &kp R          &kp T     &kp C_BRIGHTNESS_DEC  &kp Y            &kp U      &kp I      &kp O             &kp P              &kp BACKSLASH
-&kp ESCAPE    &kp A      &kp S         &kp D      &kp F          &kp G     &kp C_VOLUME_DOWN     &kp H            &kp J      &kp K      &kp L             &kp SEMI           &mt RIGHT_ALT APOS
-&sk LSHFT     &kp Z      &kp X         &kp C      &kp V          &kp B     &kp C_VOLUME_UP       &kp N            &kp M      &kp COMMA  &kp DOT           &kp FSLH           &sl 3
-&kp C_MUTE    &kp GRAVE  &sk LEFT_ALT  &sk LCTRL  &kp BACKSPACE  &sl 1     &kp C_MUTE            &mt RSHFT ENTER  &kp SPACE  &to 2      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp ESCAPE    &kp N1       &kp N2        &kp N3     &kp N4         &kp N5    &kp C_BRIGHTNESS_INC  &kp N6           &kp N7     &kp N8     &kp N9            &kp N0             &kp MINUS
+&kp TAB       &kp Q        &kp W         &kp E      &kp R          &kp T     &kp C_BRIGHTNESS_DEC  &kp Y            &kp U      &kp I      &kp O             &kp P              &kp BACKSLASH
+&kp CAPSLOCK  &kp A        &kp S         &kp D      &lt 6 F        &kp G     &kp C_VOLUME_DOWN     &kp H            &kp J      &kp K      &kp L             &kp SEMI           &mt RIGHT_ALT APOS
+&sk LSHFT     &mt LCTRL Z  &kp X         &kp C      &kp V          &kp B     &kp C_VOLUME_UP       &kp N            &kp M      &kp COMMA  &kp DOT           &kp FSLH           &sk RIGHT_SHIFT
+&kp C_MUTE    &kp GRAVE    &sk LEFT_ALT  &sk LCTRL  &kp BACKSPACE  &sl 1     &kp C_MUTE            &mt RSHFT ENTER  &kp SPACE  &sl 3      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -67,21 +86,31 @@
 
         raise {
             bindings = <
-&trans  &kp F1            &kp F2             &trans                &trans                 &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans             &trans                &trans                 &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &trans  &kp MINUS        &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans             &trans                &trans                 &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans             &trans                &trans                 &trans       &trans  &kp RIGHT_SHIFT  &trans  &trans  &trans  &trans
+&trans  &kp F1            &kp F2             &kp F3                &kp F4                 &kp F5       &trans  &kp F6           &kp F7          &kp F8        &kp F9        &kp F10           &kp F11
+&trans  &trans            &trans             &trans                &trans                 &trans       &trans  &trans           &trans          &trans        &trans        &trans            &kp F12
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &trans  &kp MINUS        &sk LEFT_SHIFT  &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_CONTROL  &trans
+&trans  &kp LC(Z)         &kp LC(X)          &kp LC(C)             &kp LC(V)              &trans       &trans  &trans           &trans          &trans        &trans        &trans            &trans
+&trans  &trans            &trans             &trans                &trans                 &trans       &trans  &kp RIGHT_SHIFT  &trans          &trans        &trans        &trans
+            >;
+        };
+
+        mac_raise {
+            bindings = <
+&trans  &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         navi {
             bindings = <
-&trans  &trans     &trans    &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PG_UP  &kp UP    &kp PG_DN  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans    &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans    &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans     &trans    &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp PG_UP  &kp UP    &kp PG_DN  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans     &trans    &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans     &trans    &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -95,6 +124,35 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        mac_mode {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        aero_navi {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans           &trans       &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(H)  &kp LA(J)        &kp LA(K)    &kp LA(L)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans           &trans       &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans           &trans       &trans     &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        enable_mac_raise {
+            if-layers = <5 1>;
+            then-layer = <2>;
         };
     };
 };
