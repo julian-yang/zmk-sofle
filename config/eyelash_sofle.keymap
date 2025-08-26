@@ -70,7 +70,7 @@
             bindings = <
 &kp CAPSLOCK  &kp N1     &kp N2        &kp N3     &kp N4         &kp N5    &kp C_BRIGHTNESS_INC  &kp N6           &kp N7     &kp N8     &kp N9            &kp N0             &kp MINUS
 &kp TAB       &kp Q      &kp W         &kp E      &kp R          &kp T     &kp C_BRIGHTNESS_DEC  &kp Y            &kp U      &kp I      &kp O             &kp P              &kp BACKSLASH
-&kp ESCAPE    &kp A      &kp S         &kp D      &kp F          &kp G     &kp C_VOLUME_DOWN     &kp H            &kp J      &kp K      &kp L             &kp SEMI           &mt RIGHT_ALT APOS
+&kp ESCAPE    &kp A      &kp S         &kp D      &lt 6 F        &kp G     &kp C_VOLUME_DOWN     &kp H            &kp J      &kp K      &kp L             &kp SEMI           &mt RIGHT_ALT APOS
 &sk LSHFT     &kp Z      &kp X         &kp C      &kp V          &kp B     &kp C_VOLUME_UP       &kp N            &kp M      &kp COMMA  &kp DOT           &kp FSLH           &sl 4
 &kp C_MUTE    &kp GRAVE  &sk LEFT_ALT  &sk LCTRL  &kp BACKSPACE  &sl 1     &kp C_MUTE            &mt RSHFT ENTER  &kp SPACE  &to 3      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
@@ -128,6 +128,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        aero_navi {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans           &trans       &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(H)  &kp LA(J)        &kp LA(K)    &kp LA(L)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans           &trans       &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans           &trans       &trans     &trans
             >;
         };
     };
