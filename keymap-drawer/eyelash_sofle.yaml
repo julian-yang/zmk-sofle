@@ -7,7 +7,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:brightness-5$$
+  - $$mdi:pan-up$$
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - $$mdi:brightness-7$$
+  - $$mdi:pan-down$$
   - Y
   - U
   - I
@@ -33,7 +33,7 @@ layers:
   - D
   - {t: F, h: aero_navi}
   - G
-  - $$mdi:volume-low$$
+  - $$mdi:pan-left$$
   - H
   - J
   - K
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:volume-high$$
+  - $$mdi:pan-right$$
   - N
   - M
   - {t: ',', s: <}
@@ -72,7 +72,7 @@ layers:
   - F3
   - F4
   - F5
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:brightness-5$$
   - F6
   - F7
   - F8
@@ -85,7 +85,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:brightness-7$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -98,7 +98,7 @@ layers:
   - (
   - )
   - {t: '=', s: +}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-low$$
   - {t: '-', s: _}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -111,7 +111,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-high$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
