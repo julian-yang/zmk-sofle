@@ -101,11 +101,11 @@
 
         navi {
             bindings = <
-&trans  &trans     &trans    &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PG_UP  &kp UP    &kp PG_DN  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans    &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans    &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans     &trans    &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp PG_UP  &kp UP    &kp PG_DN  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans     &trans    &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans     &trans    &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
