@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
-  - $$mdi:keyboard-esc$$
+  - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -54,14 +54,14 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:volume-off$$
-  - {t: '`', s: '~'}
+  - $$mdi:keyboard-esc$$
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-space$$
   - {t: raise, h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: navi, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
