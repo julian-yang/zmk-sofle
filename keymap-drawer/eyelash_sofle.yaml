@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '-', s: _}
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -42,7 +42,7 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-option$$', s: '"'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
+  - X
   - C
   - V
   - B
@@ -50,7 +50,7 @@ layers:
   - N
   - M
   - {t: ',', s: <}
-  - {t: ., h: RIGHT GUI, s: '>'}
+  - {t: ., s: '>'}
   - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:volume-off$$
