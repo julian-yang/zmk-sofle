@@ -55,14 +55,14 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:gesture-tap-hold$$'}
+  - $$mdi:arrow-right-bold$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: raise, h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:keyboard-space$$
-  - {t: navi, h: '$$mdi:gesture-tap-hold$$'}
+  - navi
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
   raise:
