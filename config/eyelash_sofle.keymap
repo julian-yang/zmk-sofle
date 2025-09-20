@@ -78,11 +78,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE     &kp N1       &kp N2     &kp N3        &kp N4         &kp N5    &msc SCRL_UP     &kp N6           &kp N7     &kp N8     &kp N9        &kp N0                  &kp LEFT_GUI
-&kp TAB       &kp Q        &kp W      &kp E         &kp R          &kp T     &msc SCRL_DOWN   &kp Y            &kp U      &kp I      &kp O         &kp P                   &kp BACKSLASH
-&kp CAPSLOCK  &kp A        &kp S      &kp D         &lt 6 F        &kp G     &msc SCRL_LEFT   &kp H            &kp J      &kp K      &kp L         &kp SEMI                &mt RIGHT_ALT APOS
-&sk LSHFT     &mt LCTRL Z  &kp X      &kp C         &kp V          &kp B     &msc SCRL_RIGHT  &kp N            &kp M      &kp COMMA  &kp DOT       &mt RIGHT_CONTROL FSLH  &sk RIGHT_SHIFT
-&kp C_MUTE    &kp LEFT     &sk RIGHT  &sk LEFT_ALT  &kp BACKSPACE  &sl 1     &kp C_MUTE       &mt RSHFT ENTER  &kp SPACE  &sl 3      &kp UP_ARROW  &kp DOWN_ARROW
+&kp GRAVE              &kp N1       &kp N2     &kp N3        &kp N4         &kp N5    &msc SCRL_UP     &kp N6           &kp N7     &kp N8     &kp N9        &kp N0                  &kp LEFT_GUI
+&kp TAB                &kp Q        &kp W      &kp E         &kp R          &kp T     &msc SCRL_DOWN   &kp Y            &kp U      &kp I      &kp O         &kp P                   &kp BACKSLASH
+&mt LEFT_GUI CAPSLOCK  &kp A        &kp S      &kp D         &lt 6 F        &kp G     &msc SCRL_LEFT   &kp H            &kp J      &kp K      &kp L         &kp SEMI                &mt LEFT_ALT APOS
+&kp LSHFT              &mt LCTRL Z  &kp X      &kp C         &kp V          &kp B     &msc SCRL_RIGHT  &kp N            &kp M      &kp COMMA  &kp DOT       &mt RIGHT_CONTROL FSLH  &kp RIGHT_SHIFT
+&kp C_MUTE             &kp LEFT     &sk RIGHT  &kp LEFT_ALT  &kp BACKSPACE  &sl 1     &kp C_MUTE       &mt RSHFT ENTER  &kp SPACE  &sl 3      &kp UP_ARROW  &kp DOWN_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -92,7 +92,7 @@
         raise {
             bindings = <
 &trans      &kp F1            &kp F2             &kp F3                &kp F4                 &kp F5       &kp C_BRIGHTNESS_INC  &kp F6           &kp F7          &kp F8        &kp F9        &kp F10           &kp F11
-&trans      &trans            &trans             &trans                &trans                 &trans       &kp C_BRIGHTNESS_DEC  &trans           &trans          &trans        &trans        &trans            &kp F12
+&trans      &trans            &trans             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &kp C_BRIGHTNESS_DEC  &trans           &trans          &trans        &trans        &trans            &kp F12
 &kp ESCAPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &kp C_VOLUME_DOWN     &kp MINUS        &sk LEFT_SHIFT  &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_CONTROL  &trans
 &trans      &kp LC(Z)         &kp LC(X)          &kp LC(C)             &kp LC(V)              &trans       &kp C_VOLUME_UP       &trans           &trans          &trans        &trans        &trans            &trans
 &trans      &trans            &trans             &trans                &trans                 &trans       &trans                &kp RIGHT_SHIFT  &trans          &trans        &trans        &trans
@@ -143,11 +143,11 @@
 
         aero_navi {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans           &trans       &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(H)  &kp LA(J)        &kp LA(K)    &kp LA(L)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans           &trans       &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans           &trans       &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans           &trans       &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(EQUAL)  &kp LS(LC(TAB))  &kp LC(TAB)  &kp LA(MINUS)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(H)      &kp LA(J)        &kp LA(K)    &kp LA(L)      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans           &trans       &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans           &trans       &trans         &trans
             >;
         };
 
