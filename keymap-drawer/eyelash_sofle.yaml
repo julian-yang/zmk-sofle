@@ -529,3 +529,5 @@ combos:
   k: {t: bt_rgb, h: '$$mdi:gesture-tap-hold$$'}
 - p: [37, 38]
   k: {t: swap_bkspc_spc, h: toggle}
+- p: [18, 17]
+  k: Sft+Ctl+Gui+4

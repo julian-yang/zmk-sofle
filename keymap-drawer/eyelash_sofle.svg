@@ -664,6 +664,12 @@ rect.held, rect.combo.held {
 <text x="868" y="168" class="combo tap layer-activator"><tspan style="font-size: 60%">swap_bksp…</tspan></text>
 </a><text x="868" y="179" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="266" y="78" width="28" height="26" class="combo"/>
+<text x="280" y="91" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 67%">Sft+</tspan><tspan x="280" dy="1.2em" style="font-size: 67%">Ctl+Gui+4</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-raise">
@@ -1021,6 +1027,12 @@ rect.held, rect.combo.held {
 <text x="868" y="168" class="combo tap layer-activator"><tspan style="font-size: 60%">swap_bksp…</tspan></text>
 </a><text x="868" y="179" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="266" y="78" width="28" height="26" class="combo"/>
+<text x="280" y="91" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 67%">Sft+</tspan><tspan x="280" dy="1.2em" style="font-size: 67%">Ctl+Gui+4</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 776)" class="layer-mac_raise">
@@ -1373,6 +1385,12 @@ rect.held, rect.combo.held {
 <text x="868" y="168" class="combo tap layer-activator"><tspan style="font-size: 60%">swap_bksp…</tspan></text>
 </a><text x="868" y="179" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="266" y="78" width="28" height="26" class="combo"/>
+<text x="280" y="91" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 67%">Sft+</tspan><tspan x="280" dy="1.2em" style="font-size: 67%">Ctl+Gui+4</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1165)" class="layer-navi">
@@ -1723,6 +1741,12 @@ rect.held, rect.combo.held {
 <a href="#swap_bkspc_spc">
 <text x="868" y="168" class="combo tap layer-activator"><tspan style="font-size: 60%">swap_bksp…</tspan></text>
 </a><text x="868" y="179" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="266" y="78" width="28" height="26" class="combo"/>
+<text x="280" y="91" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 67%">Sft+</tspan><tspan x="280" dy="1.2em" style="font-size: 67%">Ctl+Gui+4</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -2099,6 +2123,12 @@ rect.held, rect.combo.held {
 <text x="868" y="168" class="combo tap layer-activator"><tspan style="font-size: 60%">swap_bksp…</tspan></text>
 </a><text x="868" y="179" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="266" y="78" width="28" height="26" class="combo"/>
+<text x="280" y="91" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 67%">Sft+</tspan><tspan x="280" dy="1.2em" style="font-size: 67%">Ctl+Gui+4</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1941)" class="layer-mac_mode">
@@ -2446,6 +2476,12 @@ rect.held, rect.combo.held {
 <a href="#swap_bkspc_spc">
 <text x="868" y="168" class="combo tap layer-activator"><tspan style="font-size: 60%">swap_bksp…</tspan></text>
 </a><text x="868" y="179" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="266" y="78" width="28" height="26" class="combo"/>
+<text x="280" y="91" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 67%">Sft+</tspan><tspan x="280" dy="1.2em" style="font-size: 67%">Ctl+Gui+4</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -2796,6 +2832,12 @@ rect.held, rect.combo.held {
 <text x="868" y="168" class="combo tap layer-activator"><tspan style="font-size: 60%">swap_bksp…</tspan></text>
 </a><text x="868" y="179" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="266" y="78" width="28" height="26" class="combo"/>
+<text x="280" y="91" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 67%">Sft+</tspan><tspan x="280" dy="1.2em" style="font-size: 67%">Ctl+Gui+4</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 2718)" class="layer-swap_bkspc_spc">
@@ -3143,6 +3185,12 @@ rect.held, rect.combo.held {
 <a href="#swap_bkspc_spc">
 <text x="868" y="168" class="combo tap layer-activator"><tspan style="font-size: 60%">swap_bksp…</tspan></text>
 </a><text x="868" y="179" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="266" y="78" width="28" height="26" class="combo"/>
+<text x="280" y="91" class="combo tap">
+<tspan x="280" dy="-0.6em" style="font-size: 67%">Sft+</tspan><tspan x="280" dy="1.2em" style="font-size: 67%">Ctl+Gui+4</tspan>
+</text>
 </g>
 </g>
 </g>
