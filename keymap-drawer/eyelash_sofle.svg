@@ -450,8 +450,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">F</text>
-<a href="#layer3">
-<text x="0" y="24" class="key hold layer-activator">layer3</text>
+<a href="#aero_navi">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 67%">aero_navi</tspan></text>
 </a></g>
 <g transform="translate(308, 147)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -636,8 +636,8 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="854" y="211" width="28" height="26" class="combo"/>
-<a href="#layer2">
-<text x="868" y="224" class="combo tap layer-activator">layer2</text>
+<a href="#bt_rgb">
+<text x="868" y="224" class="combo tap layer-activator">bt_rgb</text>
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="860" y="220" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-2">
@@ -991,8 +991,8 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="854" y="211" width="28" height="26" class="combo"/>
-<a href="#layer2">
-<text x="868" y="224" class="combo tap layer-activator">layer2</text>
+<a href="#bt_rgb">
+<text x="868" y="224" class="combo tap layer-activator">bt_rgb</text>
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="860" y="220" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-2">
@@ -1336,8 +1336,8 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="854" y="211" width="28" height="26" class="combo"/>
-<a href="#layer2">
-<text x="868" y="224" class="combo tap layer-activator">layer2</text>
+<a href="#bt_rgb">
+<text x="868" y="224" class="combo tap layer-activator">bt_rgb</text>
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="860" y="220" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-2">
@@ -1348,8 +1348,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1165)" class="layer-layer2">
-<text x="0" y="28" class="label" id="layer2">layer2:</text>
+<g transform="translate(40, 1165)" class="layer-bt_rgb">
+<text x="0" y="28" class="label" id="bt_rgb">bt_rgb:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1705,8 +1705,8 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="854" y="211" width="28" height="26" class="combo"/>
-<a href="#layer2">
-<text x="868" y="224" class="combo tap layer-activator">layer2</text>
+<a href="#bt_rgb">
+<text x="868" y="224" class="combo tap layer-activator">bt_rgb</text>
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="860" y="220" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-2">
@@ -1717,8 +1717,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1553)" class="layer-layer3">
-<text x="0" y="28" class="label" id="layer3">layer3:</text>
+<g transform="translate(40, 1553)" class="layer-aero_navi">
+<text x="0" y="28" class="label" id="aero_navi">aero_navi:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -2048,8 +2048,8 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="854" y="211" width="28" height="26" class="combo"/>
-<a href="#layer2">
-<text x="868" y="224" class="combo tap layer-activator">layer2</text>
+<a href="#bt_rgb">
+<text x="868" y="224" class="combo tap layer-activator">bt_rgb</text>
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="860" y="220" height="15" width="15.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-2">

@@ -31,7 +31,7 @@ layers:
   - A
   - S
   - D
-  - {t: F, h: layer3}
+  - {t: F, h: aero_navi}
   - G
   - Sft+$$mdi:arrow-left-bold$$
   - H
@@ -195,7 +195,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  layer2:
+  bt_rgb:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -260,7 +260,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  layer3:
+  aero_navi:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -329,6 +329,6 @@ combos:
 - p: [14, 28, 40]
   k: '&soft_off'
 - p: [50, 51]
-  k: {t: layer2, h: '$$mdi:gesture-tap-hold$$'}
+  k: {t: bt_rgb, h: '$$mdi:gesture-tap-hold$$'}
 - p: [18, 17]
   k: Sft+Ctl+Gui+4
