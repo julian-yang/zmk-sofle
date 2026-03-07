@@ -59,9 +59,6 @@
         };
     };
 
-    macros {
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -107,7 +104,7 @@
 &trans  &trans        &trans          &trans        &trans        &trans          &rgb_ug RGB_TOG  &trans  &trans  &trans           &trans           &trans
             >;
 
-            display-name = "layer2";
+            display-name = "bt_rgb";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -120,7 +117,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans           &trans       &trans         &trans
             >;
 
-            display-name = "layer3";
+            display-name = "aero_navi";
             sensor-bindings = <&scroll_encoder>;
         };
     };
