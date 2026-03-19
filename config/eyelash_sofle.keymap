@@ -66,7 +66,7 @@
             bindings = <
 &kp GRAVE              &kp N1       &kp N2     &kp N3        &kp N4         &kp N5    &kp LS(UP_ARROW)     &kp N6           &kp N7     &kp N8     &kp N9        &kp N0                  &kp LEFT_GUI
 &kp TAB                &kp Q        &kp W      &kp E         &kp R          &kp T     &kp LS(DOWN_ARROW)   &kp Y            &kp U      &kp I      &kp O         &kp P                   &kp BACKSLASH
-&mt LEFT_GUI CAPSLOCK  &kp A        &kp S      &kp D         &lt 4 F        &kp G     &kp LS(LEFT_ARROW)   &kp H            &kp J      &kp K      &kp L         &kp SEMI                &kp SQT
+&mt LEFT_GUI CAPSLOCK  &kp A        &kp S      &kp D         &lt 4 F        &kp G     &kp LS(LEFT_ARROW)   &kp H            &kp J      &kp K      &kp L         &lt 2 SEMI              &kp SQT
 &kp LSHFT              &mt LCTRL Z  &kp X      &kp C         &kp V          &kp B     &kp LS(RIGHT_ARROW)  &kp N            &kp M      &kp COMMA  &kp DOT       &mt RIGHT_CONTROL FSLH  &kp RIGHT_SHIFT
 &kp C_MUTE             &kp LEFT     &kp RIGHT  &kp LEFT_ALT  &kp BACKSPACE  &sl 1     &kp C_MUTE           &mt RSHFT ENTER  &kp SPACE  &mo 2      &kp UP_ARROW  &kp DOWN_ARROW
             >;
@@ -87,11 +87,11 @@
 
         navi {
             bindings = <
-&trans    &trans     &trans    &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &kp PG_UP  &kp UP    &kp PG_DN  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans     &trans    &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans     &trans    &trans     &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans     &trans        &trans           &trans    &trans  &trans  &trans          &trans        &trans  &trans  &trans
+&trans  &kp HOME  &kp PG_DN  &kp PG_UP     &kp END          &trans    &trans  &trans  &trans          &trans        &trans  &trans  &trans
+&trans  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT_ARROW  &trans    &trans  &trans  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans  &trans  &trans
+&trans  &trans    &trans     &trans        &trans           &trans    &trans  &trans  &trans          &trans        &trans  &trans  &trans
+&trans  &trans    &trans     &trans        &trans           &trans    &trans  &trans  &trans          &trans        &trans  &trans
             >;
         };
 
