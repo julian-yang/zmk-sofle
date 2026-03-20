@@ -62,7 +62,7 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: navi}
-  - {t: navi, h: toggle}
+  - navi
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
   raise:
@@ -192,7 +192,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   bt_rgb:
