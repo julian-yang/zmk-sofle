@@ -103,11 +103,11 @@
 
         navi {
             bindings = <
-&none           &none  &none                &none  &none  &none                 &none  &none               &none          &none         &none                &none      &none
-&none           &none  &kp LA(RIGHT_ARROW)  &none  &none  &none                 &none  &kp LG(LEFT_ARROW)  &kp PAGE_DOWN  &kp PAGE_UP   &kp LG(RIGHT_ARROW)  &kp LG(V)  &none
-&to 0           &none  &none                &none  &none  &none                 &none  &kp LEFT            &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW      &none      &none
-&kp LEFT_SHIFT  &none  &none                &none  &to 3  &kp LA(LEFT_ARROW)    &none  &kp LG(LEFT_ARROW)  &none          &none         &none                &none      &kp RIGHT_SHIFT
-&none           &none  &none                &none  &none  &none                 &none  &none               &none          &to 0         &none                &none
+&none           &none  &none                &none  &none  &none                 &none  &none     &none               &none                &none            &none      &none
+&none           &none  &kp LA(RIGHT_ARROW)  &none  &none  &none                 &none  &none     &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &none            &kp LG(V)  &none
+&to 0           &none  &none                &none  &none  &none                 &none  &kp LEFT  &kp DOWN            &kp UP_ARROW         &kp RIGHT_ARROW  &none      &none
+&kp LEFT_SHIFT  &none  &none                &none  &to 3  &kp LA(LEFT_ARROW)    &none  &none     &none               &none                &none            &none      &kp RIGHT_SHIFT
+&none           &none  &none                &none  &none  &none                 &none  &none     &none               &to 0                &none            &none
             >;
         };
 
