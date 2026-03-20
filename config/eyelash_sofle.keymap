@@ -59,6 +59,22 @@
         };
     };
 
+    macros {
+        V_COPY: copy_and_clear {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C) &to 2>;
+            label = "COPY_AND_CLEAR";
+        };
+
+        V_CUT: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X) &to 2>;
+            label = "CUT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -87,21 +103,21 @@
 
         navi {
             bindings = <
-&none           &none  &none                &none  &none  &none                 &none  &none               &none          &none         &none                &none  &none
-&none           &none  &kp LA(RIGHT_ARROW)  &none  &none  &none                 &none  &kp LG(LEFT_ARROW)  &kp PAGE_DOWN  &kp PAGE_UP   &kp LG(RIGHT_ARROW)  &none  &none
-&to 0           &none  &none                &none  &none  &none                 &none  &kp LEFT            &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW      &none  &none
-&kp LEFT_SHIFT  &none  &none                &none  &to 3  &kp LA(LEFT_ARROW)    &none  &none               &none          &none         &none                &none  &kp RIGHT_SHIFT
+&none           &none  &none                &none  &none  &none                 &none  &none               &none          &none         &none                &none      &none
+&none           &none  &kp LA(RIGHT_ARROW)  &none  &none  &none                 &none  &kp LG(LEFT_ARROW)  &kp PAGE_DOWN  &kp PAGE_UP   &kp LG(RIGHT_ARROW)  &kp LG(V)  &none
+&to 0           &none  &none                &none  &none  &none                 &none  &kp LEFT            &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW      &none      &none
+&kp LEFT_SHIFT  &none  &none                &none  &to 3  &kp LA(LEFT_ARROW)    &none  &kp LG(LEFT_ARROW)  &none          &none         &none                &none      &kp RIGHT_SHIFT
 &none           &none  &none                &none  &none  &none                 &none  &none               &none          &to 0         &none                &none
             >;
         };
 
         visual {
             bindings = <
-&none  &none  &none                    &none  &none  &none                     &none  &none               &none         &none       &none          &none  &none
-&none  &none  &kp LA(LS(RIGHT_ARROW))  &none  &none  &none                     &none  &kp LG(C)           &none         &none       &kp LG(V)      &none  &none
-&to 0  &none  &none                    &none  &none  &none                     &none  &kp LS(LEFT_ARROW)  &kp LS(DOWN)  &kp LS(UP)  &kp LS(RIGHT)  &none  &none
-&none  &none  &kp LG(X)                &none  &to 2  &kp LA(LS(LEFT_ARROW))    &none  &none               &none         &none       &none          &none  &none
-&none  &none  &none                    &none  &none  &none                     &none  &none               &none         &none       &none          &none
+&none  &none  &none                    &none  &none  &none                     &none  &none               &none                   &none                    &none          &none  &none
+&none  &none  &kp LA(LS(RIGHT_ARROW))  &none  &none  &none                     &none  &V_COPY             &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT_ARROW))  &none          &none  &none
+&to 0  &none  &none                    &none  &none  &none                     &none  &kp LS(LEFT_ARROW)  &kp LS(DOWN)            &kp LS(UP)               &kp LS(RIGHT)  &none  &none
+&none  &none  &V_CUT                   &none  &to 2  &kp LA(LS(LEFT_ARROW))    &none  &none               &none                   &none                    &none          &none  &none
+&none  &none  &none                    &none  &none  &none                     &none  &none               &none                   &none                    &none          &none
             >;
         };
 
