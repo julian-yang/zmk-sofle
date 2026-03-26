@@ -93,11 +93,11 @@
 
         raise {
             bindings = <
-&trans      &kp F1            &kp F2             &kp F3                &kp F4                 &kp F5       &kp C_BRIGHTNESS_INC  &kp F6           &kp F7        &kp F8  &kp F9  &kp F10       &kp F11
-&trans      &trans            &trans             &trans                &kp LG(R)              &kp LG(T)    &kp C_BRIGHTNESS_DEC  &trans           &kp NUMBER_7  &kp N8  &kp N9  &trans        &kp F12
-&kp ESCAPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &kp C_VOLUME_DOWN     &kp MINUS        &kp N4        &kp N5  &kp N6  &sk LEFT_GUI  &sk RIGHT_SHIFT
-&trans      &kp LG(Z)         &kp LG(X)          &kp LG(C)             &kp LG(V)              &trans       &kp C_VOLUME_UP       &trans           &kp N1        &kp N2  &kp N3  &trans        &trans
-&trans      &trans            &trans             &trans                &trans                 &trans       &trans                &kp RIGHT_SHIFT  &trans        &trans  &kp N0  &trans
+&trans      &kp F1            &kp F2             &kp F3                &kp F4                 &kp F5       &kp C_BRIGHTNESS_INC  &kp F6           &kp F7        &kp F8           &kp F9        &kp F10            &kp F11
+&trans      &trans            &trans             &trans                &kp LG(R)              &kp LG(T)    &kp C_BRIGHTNESS_DEC  &trans           &trans        &trans           &trans        &trans             &kp F12
+&kp ESCAPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &kp C_VOLUME_DOWN     &kp MINUS        &sk LEFT_GUI  &sk RIGHT_SHIFT  &sk LEFT_ALT  &sk RIGHT_CONTROL  &trans
+&trans      &kp LG(Z)         &kp LG(X)          &kp LG(C)             &kp LG(V)              &trans       &kp C_VOLUME_UP       &trans           &trans        &trans           &trans        &trans             &trans
+&trans      &trans            &trans             &trans                &trans                 &trans       &trans                &kp RIGHT_SHIFT  &trans        &trans           &trans        &trans
             >;
         };
 
