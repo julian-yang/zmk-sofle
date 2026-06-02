@@ -49,7 +49,7 @@
         };
 
         bt_rgb_sticky_layer {
-            bindings = <&sl 5>;
+            bindings = <&sl 4>;
             key-positions = <50 51>;
         };
 
@@ -63,14 +63,14 @@
         V_COPY: copy_and_clear {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(C) &to 5>;
+            bindings = <&kp LG(C) &to 4>;
             label = "COPY_AND_CLEAR";
         };
 
         V_CUT: cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(X) &to 5>;
+            bindings = <&kp LG(X) &to 4>;
             label = "CUT";
         };
     };
@@ -82,9 +82,9 @@
             bindings = <
 &kp GRAVE              &kp N1       &kp N2     &kp N3        &kp N4         &kp N5    &kp LS(UP_ARROW)     &kp N6           &kp N7     &kp N8     &kp N9        &kp N0                  &kp LEFT_GUI
 &kp TAB                &kp Q        &kp W      &kp E         &kp R          &kp T     &kp LS(DOWN_ARROW)   &kp Y            &kp U      &kp I      &kp O         &kp P                   &kp BACKSLASH
-&mt LEFT_GUI CAPSLOCK  &kp A        &kp S      &kp D         &lt 3 F        &kp G     &kp LA(LEFT_ARROW)   &kp H            &lt 2 J    &kp K      &kp L         &mt LEFT_ALT SEMI       &kp SQT
+&mt LEFT_GUI CAPSLOCK  &kp A        &kp S      &kp D         &lt 2 F        &kp G     &kp LA(LEFT_ARROW)   &kp H            &kp J      &kp K      &kp L         &mt LEFT_ALT SEMI       &kp SQT
 &kp LSHFT              &mt LCTRL Z  &kp X      &kp C         &kp V          &kp B     &kp LA(RIGHT_ARROW)  &kp N            &kp M      &kp COMMA  &kp DOT       &mt RIGHT_CONTROL FSLH  &kp RIGHT_SHIFT
-&kp C_MUTE             &kp LEFT     &kp RIGHT  &kp LEFT_ALT  &kp BACKSPACE  &sl 1     &kp C_MUTE           &mt RSHFT ENTER  &kp SPACE  &mo 4      &kp UP_ARROW  &kp DOWN_ARROW
+&kp C_MUTE             &kp LEFT     &kp RIGHT  &kp LEFT_ALT  &kp BACKSPACE  &sl 1     &kp C_MUTE           &mt RSHFT ENTER  &kp SPACE  &mo 3      &kp UP_ARROW  &kp DOWN_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -93,21 +93,11 @@
 
         raise {
             bindings = <
-&trans      &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp C_BRIGHTNESS_INC  &kp F6           &kp F7        &kp F8          &kp F9        &kp F10    &kp F11
-&trans      &trans     &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp C_BRIGHTNESS_DEC  &trans           &trans        &trans          &trans        &trans     &kp F12
-&kp ESCAPE  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp EQUAL    &kp C_VOLUME_DOWN     &kp MINUS        &sk LEFT_GUI  &sk LEFT_SHIFT  &sk LEFT_ALT  &sk LCTRL  &trans
-&trans      &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp C_VOLUME_UP       &trans           &trans        &trans          &trans        &trans     &trans
-&trans      &trans     &trans     &trans     &trans     &trans       &trans                &kp RIGHT_SHIFT  &trans        &trans          &trans        &trans
-            >;
-        };
-
-        symbols {
-            bindings = <
-&trans  &trans            &trans             &trans                &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans             &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans             &trans                &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans             &trans                &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp C_BRIGHTNESS_INC  &kp F6            &kp F7                &kp F8                 &kp F9             &kp F10    &kp F11
+&trans      &trans     &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)    &kp C_BRIGHTNESS_DEC  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans     &kp F12
+&kp ESCAPE  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp EQUAL    &kp C_VOLUME_DOWN     &kp MINUS         &sk LEFT_GUI          &sk LEFT_SHIFT         &sk LEFT_ALT       &sk LCTRL  &trans
+&trans      &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &kp C_VOLUME_UP       &trans            &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans             &trans     &trans
+&trans      &trans     &trans     &trans     &trans     &trans       &trans                &kp RIGHT_SHIFT   &trans                &trans                 &trans             &trans
             >;
         };
 
